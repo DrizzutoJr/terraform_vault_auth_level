@@ -1,0 +1,1 @@
+This folder contains any templates you may use for your Terraform Module
