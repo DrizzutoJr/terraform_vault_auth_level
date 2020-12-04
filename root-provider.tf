@@ -5,12 +5,12 @@ provider "vault" {
   alias = "root"
 
   address = var.vault_address
-  cert_file = var.cert_file
+  ca_cert_file = var.ca_cert_file
 
   namespace = ""
 
   auth_login {
-    path = "<operator_path>"
+    path = var.operator_path
 
     parameters = {
       role_id = var.role_id
